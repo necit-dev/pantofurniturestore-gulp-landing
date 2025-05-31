@@ -1,0 +1,25 @@
+.read-more {
+	color: var(--accent);
+	font-size: 14px;
+	line-height: 1.85;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	gap: 13px;
+	cursor: pointer;
+	&::after{
+		content: url('../img/icons/arrow_right.svg');
+		height: 24px;
+		transition: transform .2s ease;
+	}
+
+	&:hover{
+		&::after{
+			transform: translateX(12px);
+		}
+	}
+
+	&--large{
+		font-size: 18px;
+	}
+}
